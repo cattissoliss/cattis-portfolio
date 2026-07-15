@@ -435,7 +435,7 @@ h3 {
   gap: clamp(2rem, 4vw, 4rem);
   align-items: start;
   width: min(100%, 52rem);
-  margin-left: auto;
+  margin-inline: auto;
 }
 
 .about-body .section-content {
