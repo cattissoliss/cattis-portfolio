@@ -543,7 +543,8 @@ h3 {
 }
 
 .opportunity {
-  margin-top: clamp(4rem, 7vw, 6rem);
+  grid-column: 1 / -1;
+  margin-top: 2rem;
   padding: clamp(1.5rem, 3vw, 2rem);
   border-radius: 1.25rem;
   background: var(--sky);
@@ -562,7 +563,7 @@ h3 {
 }
 
 .opportunity > p:not(.eyebrow) {
-  max-width: 38rem;
+  max-width: 46rem;
   color: var(--muted);
 }
 
