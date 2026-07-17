@@ -294,6 +294,10 @@ h1 {
   font-weight: 400;
 }
 
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 4.7vw, 4.5rem);
+}
+
 h2 {
   margin-bottom: 1.5rem;
   font-family: Georgia, "Times New Roman", serif;
@@ -2131,6 +2135,10 @@ footer p {
   h1 {
     margin-bottom: 1.2rem;
     font-size: clamp(2.5rem, 10.5vw, 2.9rem);
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.3rem, 9.5vw, 2.65rem);
   }
 
   .hero-intro {
