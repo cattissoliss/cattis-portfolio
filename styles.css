@@ -414,6 +414,10 @@ h3 {
   display: block;
 }
 
+#about {
+  padding-bottom: 0;
+}
+
 .section-grid::before {
   position: absolute;
   top: 0;
