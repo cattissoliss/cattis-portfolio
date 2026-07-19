@@ -8,7 +8,7 @@
       content="Projects by Catherine Solis Nandin, exploring human-centred digital tools for healthcare."
     />
     <title>Projects | Catherine Solis Nandin</title>
-    <link rel="stylesheet" href="styles.css?v=20260719-3" />
+    <link rel="stylesheet" href="styles.css?v=20260719-4" />
   </head>
   <body id="top">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -805,14 +805,12 @@
         <section class="project-objective" aria-labelledby="laboratory-results-objective-title">
           <h3 id="laboratory-results-objective-title">Objective</h3>
           <p>
-            Examine how adults without medical backgrounds interpret laboratory test
-            results presented in a simulated 1177 Journalen interface, assess whether
-            self-reported eHealth literacy is associated with interpretation performance,
-            and identify common barriers to understanding.
+            Examine how non-medical users interpret simulated laboratory results in 1177,
+            whether eHealth literacy relates to performance, and what support users need.
           </p>
         </section>
 
-        <section class="research-process" aria-labelledby="research-process-title">
+        <section class="research-process" aria-labelledby="research-process-title" data-reveal>
           <div class="research-process-heading">
             <p class="eyebrow">Study process</p>
             <h2 id="research-process-title">From patient portal to research findings</h2>
@@ -842,23 +840,15 @@
         </section>
 
         <div class="project-case-study academic-project-sections">
-          <section class="project-section">
+          <section class="project-section" data-reveal>
             <h2>Project overview</h2>
             <div class="project-section-copy">
               <p>
-                We created an online survey with four simulated laboratory-result screens
-                designed to resemble 1177 Journalen; no real patient records were used.
-                A total of 111 people completed the questionnaire, and responses from 105
-                Swedish-speaking adults without medical or health-informatics training
-                were included in the final analysis.
+                We asked 105 Swedish-speaking adults without medical backgrounds to
+                interpret four simulated laboratory-result scenarios. We combined their
+                answers with eHealth-literacy scores and comments about what was unclear.
               </p>
-              <p>
-                We compared how accurately participants interpreted the results and how
-                concerned they felt, measured self-reported eHealth literacy using
-                Sw-eHEALS, and analysed open-text responses about what was confusing or
-                missing from the portal presentation.
-              </p>
-              <figure class="research-interface-example">
+              <figure class="research-interface-example" data-reveal>
                 <a
                   href="assets/simulated-1177-laboratory-results.png"
                   aria-label="Open the simulated 1177 laboratory-result example at full size"
@@ -871,34 +861,50 @@
                   />
                 </a>
                 <figcaption>
-                  Example of the simulated laboratory-result view used in the survey.
-                  Swedish is shown on the left with an English translation on the right;
-                  the data are fictional. Select the image to view it at full size.
+                  Simulated survey view: Swedish on the left and English on the right.
+                  All data are fictional. Select the image to view it at full size.
                 </figcaption>
               </figure>
             </div>
           </section>
 
-          <section class="project-section">
-            <h2>Research design</h2>
+          <section class="project-section" data-reveal>
+            <h2>How we studied it</h2>
             <div class="project-section-copy">
-              <div class="research-card-grid">
-                <article>
-                  <h3>Participants</h3>
+              <p class="research-method-intro">Open a method to see the details.</p>
+              <div class="research-method-list">
+                <details class="research-method-card">
+                  <summary>
+                    <span class="research-method-number">01</span>
+                    <span><small>Participants</small><strong>105 responses analysed</strong></span>
+                    <span class="research-method-toggle" aria-hidden="true"></span>
+                  </summary>
                   <p>111 people completed the questionnaire, and 105 were included in the final analysis.</p>
-                </article>
-                <article>
-                  <h3>Scenario-based survey</h3>
+                </details>
+                <details class="research-method-card">
+                  <summary>
+                    <span class="research-method-number">02</span>
+                    <span><small>Survey</small><strong>Four simulated scenarios</strong></span>
+                    <span class="research-method-toggle" aria-hidden="true"></span>
+                  </summary>
                   <p>Participants interpreted four laboratory-result scenarios presented in a simulated 1177-style interface.</p>
-                </article>
-                <article>
-                  <h3>Quantitative analysis</h3>
+                </details>
+                <details class="research-method-card">
+                  <summary>
+                    <span class="research-method-number">03</span>
+                    <span><small>Quantitative</small><strong>Statistics and correlation</strong></span>
+                    <span class="research-method-toggle" aria-hidden="true"></span>
+                  </summary>
                   <p>Interpretation accuracy, perceived concern, and Sw-eHEALS scores were analysed using descriptive statistics and Spearman correlation.</p>
-                </article>
-                <article>
-                  <h3>Qualitative analysis</h3>
+                </details>
+                <details class="research-method-card">
+                  <summary>
+                    <span class="research-method-number">04</span>
+                    <span><small>Qualitative</small><strong>User-reported barriers</strong></span>
+                    <span class="research-method-toggle" aria-hidden="true"></span>
+                  </summary>
                   <p>Open-ended responses were analysed using descriptive content analysis to identify recurring barriers.</p>
-                </article>
+                </details>
               </div>
             </div>
           </section>
@@ -907,7 +913,7 @@
             <h2>Key findings</h2>
             <div class="project-section-copy">
               <div class="research-card-grid research-findings-grid">
-                <article>
+                <article data-reveal style="--reveal-delay: 0ms;">
                   <h3>Clear results were easier to interpret</h3>
                   <figure class="finding-diagram finding-comparison" aria-label="Clearly normal or abnormal results were easier to interpret than borderline or mildly abnormal results">
                     <div>
@@ -923,7 +929,7 @@
                   </figure>
                   <p>Accuracy was higher for clearly normal or clearly abnormal results than for results near reference boundaries or only mildly abnormal.</p>
                 </article>
-                <article>
+                <article data-reveal style="--reveal-delay: 90ms;">
                   <h3>Self-reported eHealth literacy did not predict performance</h3>
                   <figure class="finding-diagram finding-association" aria-label="Diagram showing no significant association between self-reported eHealth literacy and interpretation performance">
                     <div class="finding-axis" aria-hidden="true">
@@ -942,7 +948,7 @@
                   </figure>
                   <p>Self-reported Sw-eHEALS scores were not significantly associated with interpretation accuracy or perceived concern.</p>
                 </article>
-                <article>
+                <article data-reveal style="--reveal-delay: 180ms;">
                   <h3>Numbers alone did not explain what the result meant</h3>
                   <figure class="finding-diagram finding-information" aria-label="Laboratory values and reference ranges did not always provide enough clinical meaning">
                     <span>Test result</span>
@@ -951,7 +957,7 @@
                   </figure>
                   <p>Participants could see the laboratory value and reference range, but still struggled to understand the terminology and what the result meant for their health.</p>
                 </article>
-                <article>
+                <article data-reveal style="--reveal-delay: 270ms;">
                   <h3>Users were unsure what action to take</h3>
                   <figure class="finding-diagram finding-guidance" aria-label="Users wanted a path from seeing a result to understanding its meaning and knowing the next step">
                     <span>See result</span>
@@ -964,30 +970,23 @@
             </div>
           </section>
 
-          <section class="project-section">
+          <section class="project-section" data-reveal>
             <h2>My contribution</h2>
             <div class="project-section-copy">
               <p>
-                This was a four-person group research project. I led the analysis and
-                discussion of the qualitative research question concerning user-reported
-                barriers and difficulties. I also contributed to the study design and
-                manuscript development and was responsible for final editing and reference
-                management.
+                In our four-person team, I led the qualitative analysis and discussion of
+                user-reported barriers. I also contributed to the study design and manuscript,
+                and handled final editing and reference management.
               </p>
             </div>
           </section>
 
-          <section class="project-section">
+          <section class="project-section" data-reveal>
             <h2>Key reflections</h2>
             <div class="project-section-copy">
               <p>
-                This project reinforced that access to digital health information does
-                not automatically lead to understanding. Combining interpretation tasks
-                with users’ own descriptions of difficulty showed the value of evaluating
-                both measurable performance and lived experience when studying
-                patient-facing systems. The project also highlighted the importance of
-                clear explanations, contextual support, and guidance on appropriate next
-                steps.
+                Access does not guarantee understanding. Patient portals need clear
+                explanations, clinical context, and guidance—not only values and reference ranges.
               </p>
             </div>
           </section>
@@ -1033,6 +1032,6 @@
       <p>© 2026 Catherine Solis Nandin</p>
       <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
-    <script src="project-lightbox.js"></script>
+    <script src="project-lightbox.js?v=20260719-1"></script>
   </body>
 </html>
