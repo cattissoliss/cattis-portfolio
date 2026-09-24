@@ -16,8 +16,9 @@ The dashboard opens at http://localhost:8501.
 ## Analysis shown
 
 - Overall recurrence counts and percentages
-- Cross-tabulation of recurrence by Risk, Gender, Stage, Pathology, Age group,
-  Smoking, Response, or Focality
+- Cross-tabulation of recurrence by all categorical patient characteristics,
+  including demographics, smoking history, clinical findings, pathology,
+  TNM classification, stage, response, and risk
 - Within-category recurrence percentages
 - Interactive grouped Plotly bar chart and its underlying summary table
 - Data-cleaning checks and age summaries overall and by recurrence status

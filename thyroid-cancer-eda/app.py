@@ -13,8 +13,16 @@ VARIABLES = {
     "Pathology": "pathology",
     "Age group": "age_group",
     "Smoking": "smoking",
+    "History of smoking": "hx_smoking",
+    "History of radiotherapy": "hx_radiotherapy",
+    "Thyroid function": "thyroid_function",
+    "Physical examination": "physical_examination",
+    "Adenopathy": "adenopathy",
     "Response": "response",
     "Focality": "focality",
+    "T classification": "t",
+    "N classification": "n",
+    "M classification": "m",
 }
 CATEGORY_ORDERS = {
     "risk": ["Low", "Intermediate", "High"],
@@ -23,6 +31,23 @@ CATEGORY_ORDERS = {
     "pathology": ["Micropapillary", "Papillary", "Follicular", "Hurthel cell"],
     "age_group": ["<30", "30–44", "45–59", "60+"],
     "smoking": ["No", "Yes"],
+    "hx_smoking": ["No", "Yes"],
+    "hx_radiotherapy": ["No", "Yes"],
+    "thyroid_function": [
+        "Euthyroid",
+        "Clinical Hyperthyroidism",
+        "Subclinical Hypothyroidism",
+        "Clinical Hypothyroidism",
+        "Subclinical Hyperthyroidism",
+    ],
+    "physical_examination": [
+        "Multinodular goiter",
+        "Single nodular goiter-right",
+        "Single nodular goiter-left",
+        "Diffuse goiter",
+        "Normal",
+    ],
+    "adenopathy": ["No", "Right", "Bilateral", "Left", "Extensive", "Posterior"],
     "response": [
         "Excellent",
         "Indeterminate",
@@ -30,6 +55,9 @@ CATEGORY_ORDERS = {
         "Structural Incomplete",
     ],
     "focality": ["Uni-Focal", "Multi-Focal"],
+    "t": ["T1a", "T1b", "T2", "T3a", "T3b", "T4a", "T4b"],
+    "n": ["N0", "N1a", "N1b"],
+    "m": ["M0", "M1"],
 }
 RECURRENCE_ORDER = ["No", "Yes"]
 RECURRENCE_COLORS = {"No": "#2563EB", "Yes": "#F59E0B"}
@@ -228,7 +256,12 @@ figure.update_layout(
 )
 figure.update_xaxes(
     type="category",
-    tickangle=-20 if selected_label == "Response" else 0,
+    tickangle=(
+        -20
+        if selected_label
+        in {"Response", "Thyroid function", "Physical examination"}
+        else 0
+    ),
 )
 st.plotly_chart(figure, width="stretch")
 
